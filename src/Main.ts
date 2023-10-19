@@ -77,6 +77,7 @@ class Main extends eui.UILayer {
             await RES.loadGroup("preload", 0, loadingView);
             this.stage.removeChild(loadingView);
         }
+        npm.install("@egret/egret-library-installer",{global:true})
         catch (e) {
             console.error(e);
         }
